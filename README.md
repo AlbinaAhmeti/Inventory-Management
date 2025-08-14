@@ -1,7 +1,5 @@
 # Inventory Management - Albina Ahmeti
 
-# Inventory-Management
-
 # Flex Business Solutions – Inventory Management
 
 App i vogël për menaxhimin e inventarit nëpër **job sites** sipas një dizajni të dhënë në Figma. Mundëson:
