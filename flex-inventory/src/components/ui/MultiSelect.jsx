@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import React from 'react'
 
 export function MultiSelect({ label, options = [], value = [], onChange, placeholder = "Select", className = "" }) {
   const [open, setOpen] = useState(false);

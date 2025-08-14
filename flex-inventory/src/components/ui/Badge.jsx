@@ -1,3 +1,5 @@
+import React from 'react'
+
 const map = { 'Completed':'green', 'In Progress':'mint', 'On Hold':'red', 'On Road':'yellow' }
 
 export default function Badge({ children, tone }) {

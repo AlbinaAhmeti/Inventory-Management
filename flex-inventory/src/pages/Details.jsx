@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import Input from "../components/ui/Input";
 import Button from "../components/ui/Button";
 import Table from "../components/Table";
+import React from 'react'
 import EditItemModal from "../modals/EditItemModal";
 import { useStore } from "../store";
 import BoxImg from "../assets/box.png";

@@ -1,4 +1,5 @@
 import { Routes, Route, Navigate } from 'react-router-dom'
+import React from 'react'
 import Home from './pages/Home'
 import Details from './pages/Details'
 

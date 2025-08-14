@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import React from 'react'
 
 export function Select({ label, options = [], value = "", onChange, placeholder = "Select one" }) {
   const [open, setOpen] = useState(false);

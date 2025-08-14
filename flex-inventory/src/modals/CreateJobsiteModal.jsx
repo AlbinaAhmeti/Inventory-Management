@@ -6,6 +6,7 @@ import { Select } from '../components/ui/Select'
 import { MultiSelect } from '../components/ui/MultiSelect'
 import { v4 as uuid } from 'uuid'
 import { useDispatch } from '../store'
+import React from 'react'
 
 const STATUSES = ['Completed', 'On Hold', 'In Progress']
 const CATS = ['Sidewalk Shed', 'Scaffold', 'Shoring']

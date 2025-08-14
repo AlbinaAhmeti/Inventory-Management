@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import Modal from '../components/ui/Modal'
 import Button from '../components/ui/Button'
 import Input from '../components/ui/Input'
+import React from 'react'
 import { useDispatch } from '../store'
 
 export default function EditItemModal({ open, onClose, jobsiteId, category, item }){
