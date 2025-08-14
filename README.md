@@ -1,4 +1,4 @@
-# Inventory-Management
+# Inventory Management - Albina Ahmeti
 
 # Flex Business Solutions – Inventory Management
 
