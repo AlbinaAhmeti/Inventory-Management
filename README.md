@@ -122,6 +122,11 @@ setupTests.ts             # jest-dom + cleanup + clear localStorage
 ## 🖼️ Screenshots
 > Përfshiji këto skedarë në repo nëse dëshiron të shfaqen në GitHub.
 
+![SC1](./SC1.png)
+![SC2](./SC2.png)
+![SC4](./SC4.png)
+![SC5](./SC5.png)
+![SC6](./SC6.png)
 ![Test 1](./Test1.png)
 ![Test 2](./Test2.png)
 
