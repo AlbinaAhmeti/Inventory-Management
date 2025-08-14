@@ -60,14 +60,10 @@ npm run test:watch
 ```
 
 **UI e Vitest (dashboard web)**  
-Nëse ke një script `test:ui`, përdore:
 ```bash
 npm run test:ui
 ```
-ose direkt:
-```bash
-npx vitest --ui
-```
+
 Hapet tek: `http://localhost:51204/__vitest__` (porta mund të ndryshojë).
 
 **Çfarë testojmë**
