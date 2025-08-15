@@ -1,7 +1,7 @@
 import { v4 as uuid } from 'uuid'
 
 const categories = ['Sidewalk Shed', 'Scaffold', 'Shoring']
-const statuses = ['On Road', 'Completed', 'On Hold', 'In Progress']
+const statuses = ['Completed', 'On Hold', 'In Progress']
 
 const makeItems = () => Array.from({ length: 11 }).map((_, i) => ({
   id: uuid(),
@@ -32,7 +32,7 @@ export const seedData = () => {
       '135-20 Roosevelt Ave, Flushing, NY 11354, USA',
       '118-35 Queens Blvd, Forest Hills, NY 11375, USA'
     ][i] || `Jobsite ${i + 1}`,
-    status: statuses[[1, 3, 2, 0][i % 4]],
+    status: statuses[[1, 2, 0][i % 3]],
     categories
   }))
 

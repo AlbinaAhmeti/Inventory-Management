@@ -26,9 +26,10 @@ export default function EditItemModal({ open, onClose, jobsiteId, category, item
       onClose={onClose}
       title="Title"
       footer={
-        <Button className="btn save-btn" onClick={save}>
-          Save Changes 
-        </Button>
+          <Button className="btn-split success" onClick={save}>
+            <span className="btn-label">Save Changes</span>
+            <span className="btn-seg" aria-hidden>✓</span>
+          </Button>
       }
     >
       {item && (

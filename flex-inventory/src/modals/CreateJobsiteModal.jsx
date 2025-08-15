@@ -50,8 +50,15 @@ export default function CreateJobsiteModal({ open, onClose }) {
       title="Title"
       footer={
         <>
-          <Button variant="outline"  className="cancel" onClick={handleClose}>Cancel Changes</Button>
-          <Button onClick={submit}>Save Changes</Button>
+          <Button className="btn-split danger" onClick={handleClose}>
+            <span className="btn-label">Cancel Changes</span>
+            <span className="btn-seg" aria-hidden>✕</span>
+          </Button>
+
+          <Button className="btn-split success" onClick={submit}>
+            <span className="btn-label">Save Changes</span>
+            <span className="btn-seg" aria-hidden>✓</span>
+          </Button>
         </>
       }
     >
