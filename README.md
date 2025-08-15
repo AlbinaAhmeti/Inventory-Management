@@ -123,9 +123,14 @@ setupTests.ts             # jest-dom + cleanup + clear localStorage
 
 ![SC1](./SC1.png)
 ![SC2](./SC2.png)
+![SC3](./SC3.png)
 ![SC4](./SC4.png)
 ![SC5](./SC5.png)
 ![SC6](./SC6.png)
+![SC7](./SC7.png)
+![SC8](./SC8.png)
+![SC9](./SC9.png)
+![SC10](./SC10.png)
 ![Test 1](./Test1.png)
 ![Test 2](./Test2.png)
 
