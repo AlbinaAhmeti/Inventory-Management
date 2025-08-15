@@ -1,6 +1,6 @@
 import React from 'react'
 
-const map = { 'Completed':'green', 'In Progress':'mint', 'On Hold':'red', 'On Road':'yellow' }
+const map = { 'Completed':'green', 'In Progress':'mint', 'On Hold':'yellow'}
 
 export default function Badge({ children, tone }) {
   const t = tone || map[children] || 'green'

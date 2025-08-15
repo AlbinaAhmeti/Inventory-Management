@@ -7,7 +7,7 @@ export default function Modal({ title, open, onClose, children, footer }){
       <div className="modal" onClick={(e)=>e.stopPropagation()}>
         <header className="row" style={{justifyContent:'space-between'}}>
           <div>{title}</div>
-          <button className="btn outline" onClick={onClose}>×</button>
+          <button className="modal-close" aria-label="Close" onClick={onClose}>×</button>
         </header>
         <div className="content">{children}</div>
         <div className="footer">{footer}</div>

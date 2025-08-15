@@ -14,7 +14,7 @@ export default function Home(){
 
   const filtered = useMemo(()=> jobsites.filter(j=> j.name.toLowerCase().includes(q.toLowerCase())),[jobsites,q])
   const counts = useMemo(()=> ({
-    onRold: jobsites.filter(j=>j.status==='On Hold').length,
+    inProgress: jobsites.filter(j=>j.status==='In Progress').length,
     completed: jobsites.filter(j=>j.status==='Completed').length,
     onHold: jobsites.filter(j=>j.status==='On Hold').length,
   }),[jobsites])
@@ -23,7 +23,7 @@ export default function Home(){
     <div className="container grid" style={{gap:18}}>
       <div className="rowbox">
         <div className="row" style={{gap:14}}>
-        <div className="stat yellow">{counts.onRold} On Rold</div>
+        <div className="stat yellow">{counts.inProgress} On Rold</div>
         <div className="stat green">{counts.completed} Completed</div>
         <div className="stat red">{counts.onHold} On Hold</div>
       </div>
@@ -54,14 +54,14 @@ export default function Home(){
           <table className="table">
             <thead>
               <tr>
-                <th>Jobsite Name</th>
-                <th>Status</th>
+                <th style={{ width: '50%' }}>Jobsite Name</th>
+                <th style={{ width: '50%' }}>Status</th>
               </tr>
             </thead>
             <tbody>
               {filtered.map(j => (
                 <tr key={j.id}>
-                  <td><Link className="link" to={`/job/${j.id}`}>{j.name}</Link></td>
+                  <td><Link className="link"  to={`/job/${j.id}`}>{j.name}</Link></td>
                   <td>
                     <Badge>{j.status}</Badge>
                   </td>

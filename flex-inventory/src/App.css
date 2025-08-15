@@ -67,7 +67,7 @@ body {
 .btn {
   border: none;
   border-radius: 5px;
-  padding: 10px 20px;
+  padding: 8px 20px;
   font-weight: 100;
   cursor: pointer;
   display: inline-flex;
@@ -78,7 +78,7 @@ body {
 }
 
 .btn.primary {
-  background: #22c55e;
+  background: #1af168;
   color: #fff;
 }
 
@@ -89,7 +89,12 @@ body {
 
 .btn.outline {
   background: #fff;
+}
+
+.btn.outline.cancel {
+  background: #ff0000;
   border: 1px solid var(--ring);
+  color: white;
 }
 
 .btn.danger {
@@ -132,25 +137,25 @@ body {
 
 .badge.solid.green {
   background: #22c55e;
-  border: 1px solid #16a34a;
+  border: 1px solid #22c55e;
   color: #fff;
 }
 
 .badge.solid.mint {
-  background: #d1f7d6;
+  background: #a6e7b1;
   border: 1px solid #a6e7b1;
-  color: #14532d;
+  color: #fff;
 }
 
 .badge.solid.yellow {
-  background: #f2de73;
-  border: 1px solid #e3ca58;
-  color: #7a5f00;
+  background: #ffe46d;
+  border: 1px solid #ffe46d;
+  color: #fff;
 }
 
 .badge.solid.red {
-  background: #ef4444;
-  border: 1px solid #dc2626;
+  background: #ef0c0c;
+  border: 1px solid #ef0c0c;
   color: #fff;
 }
 
@@ -158,7 +163,6 @@ body {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0 10px;
-  text-align: center;
 }
 
 .table th {
@@ -177,10 +181,27 @@ body {
   border-radius: 10px;
 }
 
-.table th:nth-child(2),
-.table td:nth-child(2) {
+.table thead th:first-child { 
+  text-align: center; 
+}
+
+.table tbody td:first-child { 
+  text-align: left; 
+  vertical-align: middle; 
+}
+
+.table thead th:nth-child(2),
+.table tbody td:nth-child(2) {
   text-align: center;
 }
+
+.table tbody td:first-child a.link {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  padding-left: 45%;
+}
+
 
 .table tbody tr:nth-child(even) td {
   background: #ffffff;
@@ -213,9 +234,9 @@ body {
 }
 
 .modal header {
-  padding: 14px 16px;
+  padding: 0px 15px;
   border-bottom: 1px solid var(--ring);
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .modal .content {
@@ -262,11 +283,11 @@ body {
 }
 
 .stat.yellow {
-  background: #eab308;
+  background: #ffe46d;
 }
 
 .stat.red {
-  background: #ef4444;
+  background: #ef0c0c;
 }
 
 .link {
@@ -451,11 +472,11 @@ body {
 }
 
 .ms-dot.scaffold {
-  background: #f59e0b;
+  background: #ffe46d;
 }
 
 .ms-dot.shoring {
-  background: #8b5cf6;
+  background: #710ba3;
 }
 
 .ms-option+.ms-option {
@@ -468,12 +489,12 @@ body {
 }
 
 .ms-option.scaffold.selected {
-  background: #f59e0b;
+  background: #ffe46d;
   box-shadow: inset 0 0 0 1px rgba(245, 158, 11, .22);
 }
 
 .ms-option.shoring.selected {
-  background: #8b5cf6;
+  background: #710ba3;
   box-shadow: inset 0 0 0 1px rgba(139, 92, 246, .22);
 }
 
@@ -629,11 +650,11 @@ body {
 }
 
 .ss-dot.progress {
-  background: #84cc16;
+  background: #a6e7b1;
 }
 
 .ss-dot.hold {
-  background: #f59e0b;
+  background: #ffe46d;
 }
 
 .ss-dot.default {
@@ -646,11 +667,13 @@ body {
 }
 
 .ss-option.progress.selected {
-  background: #b7e4a8;
+  background: #a6e7b1;
+  color: #fff;
 }
 
 .ss-option.hold.selected {
-  background: #fde68a;
+  background: #ffe46d;
+  color: #fff;
 }
 
 .ss-option.default.selected {
@@ -662,7 +685,6 @@ body {
 }
 
 .ss-option .ss-check {
-  background: #22c55e;
   color: #fff;
   font-weight: 900;
   font-size: 12px;
@@ -673,9 +695,6 @@ body {
   border-radius: 6px;
 }
 
-.ss-option.completed.selected .ss-check {
-  background: rgba(255, 255, 255, .25);
-}
 
 .ms-cell {
   position: relative;
@@ -701,7 +720,7 @@ body {
 
 .cat-btn {
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
   background: #fff;
   border: 1px solid var(--ring);
   border-radius: 8px;
@@ -752,10 +771,10 @@ body {
 }
 
 .btn.back-btn {
-  background: #2563eb;
+  background: #0e3da2;
   color: #fff;
   border-radius: 8px;
-  padding: 8px 14px;
+  padding: 5px 14px;
   font-weight: 600;
   display: inline-flex;
   align-items: center;
@@ -788,11 +807,6 @@ body {
 
 .push-bottom {
   margin-top: auto;
-}
-
-.modal header {
-  background: #fafbfd;
-  border-bottom: 1px solid var(--ring);
 }
 
 .modal-form {
@@ -859,10 +873,9 @@ body {
 }
 
 .save-btn {
-  background: #22c55e;
+  background: #12ef63;
   color: #fff;
-  border-radius: 10px;
-  padding: 10px 14px;
+  padding: 8px 10px;
   font-weight: 700;
   display: inline-flex;
   align-items: center;
@@ -873,17 +886,24 @@ body {
   filter: brightness(.98);
 }
 
-.tick-box {
-  width: 24px;
-  height: 24px;
-  border-radius: 6px;
-  display: inline-grid;
-  place-items: center;
-  line-height: 1;
-  color: #fff;
-  font-weight: 800;
-}
-
 .modal .content {
   padding-top: 12px;
+}
+
+.modal-close {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  font-size: 36px;
+  line-height: 1;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  background: #fff;
+  color: #0f172a;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  background: #ffffff;
 }

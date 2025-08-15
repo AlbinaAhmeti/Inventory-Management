@@ -27,7 +27,7 @@ export default function EditItemModal({ open, onClose, jobsiteId, category, item
       title="Title"
       footer={
         <Button className="btn save-btn" onClick={save}>
-          Save Changes <span className="tick-box">✓</span>
+          Save Changes 
         </Button>
       }
     >
